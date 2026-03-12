@@ -15,189 +15,55 @@
     --tint: #F5F0E8;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg);
-    color: var(--dark);
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 17px;
-    line-height: 1.75;
-  }
+  body { background: var(--bg); color: var(--dark); font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.75; }
   .page-wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
-
-  /* HEADER */
-  .site-header {
-    border-bottom: 3px solid var(--gold);
-    padding: 14px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .pub-name {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .12em;
-    color: var(--gold);
-    text-transform: uppercase;
-  }
-  .issue-meta {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: var(--light);
-  }
-
-  /* MASTHEAD */
-  .masthead {
-    text-align: center;
-    padding: 48px 0 36px;
-    border-bottom: 1px solid var(--rule);
-  }
-  .masthead h1 {
-    font-family: Arial, sans-serif;
-    font-size: clamp(40px, 8vw, 64px);
-    font-weight: 900;
-    letter-spacing: .06em;
-    color: var(--dark);
-    line-height: 1;
-  }
+  .site-header { border-bottom: 3px solid var(--gold); padding: 14px 0 10px; display: flex; justify-content: space-between; align-items: baseline; }
+  .pub-name { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--gold); text-transform: uppercase; }
+  .issue-meta { font-family: Arial, sans-serif; font-size: 12px; color: var(--light); }
+  .masthead { text-align: center; padding: 48px 0 36px; border-bottom: 1px solid var(--rule); }
+  .masthead h1 { font-family: Arial, sans-serif; font-size: clamp(40px, 8vw, 64px); font-weight: 900; letter-spacing: .06em; color: var(--dark); line-height: 1; }
   .masthead h1 span { color: var(--gold); display: block; }
-  .masthead .tagline {
-    font-style: italic;
-    color: var(--mid);
-    margin-top: 12px;
-    font-size: 16px;
-  }
-  .masthead .about {
-    max-width: 520px;
-    margin: 20px auto 0;
-    font-size: 15px;
-    color: var(--mid);
-    line-height: 1.65;
-  }
+  .masthead .tagline { font-style: italic; color: var(--mid); margin-top: 12px; font-size: 16px; }
+  .masthead .about { max-width: 520px; margin: 20px auto 0; font-size: 15px; color: var(--mid); line-height: 1.65; }
+  .label { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-top: 52px; margin-bottom: 12px; }
 
-  /* LATEST ISSUE */
-  .label {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-top: 52px;
-    margin-bottom: 12px;
-  }
-
-  .latest-card {
-    background: var(--tint);
-    border-left: 4px solid var(--gold);
-    padding: 28px 32px;
-    margin-bottom: 8px;
-    text-decoration: none;
-    display: block;
-    transition: background 0.15s;
-  }
+  /* LATEST CARD */
+  .latest-card { background: var(--tint); border-left: 4px solid var(--gold); padding: 28px 32px; margin-bottom: 8px; text-decoration: none; display: block; transition: background 0.15s; }
   .latest-card:hover { background: #EDE8DF; }
-  .latest-card .issue-num {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--light);
-    margin-bottom: 6px;
-  }
-  .latest-card h2 {
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 900;
-    color: var(--dark);
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .latest-card .deck {
-    font-style: italic;
-    color: var(--mid);
-    font-size: 16px;
-    line-height: 1.55;
-    margin-bottom: 16px;
-  }
-  .latest-card .read-link {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--gold);
-    letter-spacing: .06em;
-    text-transform: uppercase;
-  }
+  .latest-card .issue-num { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--light); margin-bottom: 6px; }
+  .latest-card h2 { font-family: Arial, sans-serif; font-size: 26px; font-weight: 900; color: var(--dark); line-height: 1.2; margin-bottom: 8px; }
+  .latest-card .deck { font-style: italic; color: var(--mid); font-size: 16px; line-height: 1.55; margin-bottom: 20px; }
+  .card-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .read-link { font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: .06em; text-transform: uppercase; }
+  .btn-pdf { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; color: var(--mid); letter-spacing: .04em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--rule); padding: 5px 12px; border-radius: 3px; transition: border-color 0.15s, color 0.15s; background: white; }
+  .btn-pdf:hover { color: var(--gold); border-color: var(--gold); }
+  .btn-pdf::before { content: "↓ "; }
 
   /* ARCHIVE LIST */
-  .archive-list {
-    list-style: none;
-    margin-top: 8px;
-  }
-  .archive-list li {
-    border-top: 1px solid var(--rule);
-  }
-  .archive-list li:last-child {
-    border-bottom: 1px solid var(--rule);
-  }
-  .archive-list a {
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-    padding: 16px 4px;
-    text-decoration: none;
-    transition: background 0.12s;
-  }
-  .archive-list a:hover { background: var(--tint); padding-left: 10px; }
-  .archive-list .arc-num {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--gold);
-    white-space: nowrap;
-    min-width: 60px;
-  }
-  .archive-list .arc-body { flex: 1; }
-  .archive-list .arc-title {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--dark);
-    display: block;
-    line-height: 1.3;
-  }
-  .archive-list .arc-subtitle {
-    font-style: italic;
-    font-size: 14px;
-    color: var(--mid);
-    display: block;
-    margin-top: 2px;
-  }
-  .archive-list .arc-date {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: var(--light);
-    white-space: nowrap;
-  }
+  .archive-list { list-style: none; margin-top: 8px; }
+  .archive-list li { border-top: 1px solid var(--rule); }
+  .archive-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .arc-row { display: flex; align-items: center; padding: 14px 4px; gap: 12px; transition: background 0.12s; }
+  .arc-row:hover { background: var(--tint); padding-left: 10px; }
+  .arc-link { display: flex; align-items: baseline; gap: 16px; text-decoration: none; flex: 1; min-width: 0; }
+  .arc-num { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; color: var(--gold); white-space: nowrap; min-width: 60px; }
+  .arc-body { flex: 1; min-width: 0; }
+  .arc-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: var(--dark); display: block; line-height: 1.3; }
+  .arc-subtitle { font-style: italic; font-size: 14px; color: var(--mid); display: block; margin-top: 2px; }
+  .arc-meta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .arc-date { font-family: Arial, sans-serif; font-size: 12px; color: var(--light); white-space: nowrap; }
+  .arc-pdf { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; color: var(--mid); letter-spacing: .04em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--rule); padding: 3px 9px; border-radius: 3px; white-space: nowrap; transition: border-color 0.15s, color 0.15s; background: white; }
+  .arc-pdf:hover { color: var(--gold); border-color: var(--gold); }
+  .arc-pdf::before { content: "↓ "; }
 
-  /* FOOTER */
-  .site-footer {
-    border-top: 1px solid var(--rule);
-    padding: 20px 0 0;
-    margin-top: 60px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: var(--light);
-    text-align: center;
-  }
+  .site-footer { border-top: 1px solid var(--rule); padding: 20px 0 0; margin-top: 60px; font-family: Arial, sans-serif; font-size: 12px; color: var(--light); text-align: center; }
   .site-footer a { color: var(--gold); text-decoration: none; }
 
-  @media (max-width: 480px) {
+  @media (max-width: 520px) {
     body { font-size: 16px; }
     .page-wrap { padding: 0 16px 60px; }
     .latest-card { padding: 20px 18px; }
-    .archive-list .arc-date { display: none; }
+    .arc-date { display: none; }
   }
 </style>
 </head>
@@ -221,7 +87,10 @@
     <div class="issue-num">Issue 8 &nbsp;·&nbsp; 13 March 2026</div>
     <h2>The Afterlife of the Gold Rush</h2>
     <p class="deck">What the old mining belt between Springs and Nigel is quietly becoming — and why its most important actors have never held a mining licence.</p>
-    <span class="read-link">Read Issue 8 →</span>
+    <div class="card-actions">
+      <span class="read-link">Read Issue 8 →</span>
+      <a class="btn-pdf" href="ekurhuleni-underground-issue8.pdf" download onclick="event.stopPropagation()">PDF</a>
+    </div>
   </a>
 
   <!-- ARCHIVE -->
@@ -229,25 +98,35 @@
   <ul class="archive-list">
 
     <li>
-      <a href="issue8.html">
-        <span class="arc-num">Issue 8</span>
-        <span class="arc-body">
-          <span class="arc-title">The Afterlife of the Gold Rush</span>
-          <span class="arc-subtitle">The Springs Corridor — metals reclamation, repurposed skills, and post-extractive industry</span>
-        </span>
-        <span class="arc-date">13 Mar 2026</span>
-      </a>
+      <div class="arc-row">
+        <a class="arc-link" href="issue8.html">
+          <span class="arc-num">Issue 8</span>
+          <span class="arc-body">
+            <span class="arc-title">The Afterlife of the Gold Rush</span>
+            <span class="arc-subtitle">The Springs Corridor — metals reclamation, repurposed skills, and post-extractive industry</span>
+          </span>
+        </a>
+        <div class="arc-meta">
+          <span class="arc-date">13 Mar 2026</span>
+          <a class="arc-pdf" href="ekurhuleni-underground-issue8.pdf" download>PDF</a>
+        </div>
+      </div>
     </li>
 
     <li>
-      <a href="issue7.html">
-        <span class="arc-num">Issue 7</span>
-        <span class="arc-body">
-          <span class="arc-title">The Invisible Port</span>
-          <span class="arc-subtitle">Airport Economy — how OR Tambo reorganised the economic geography of the East Rand</span>
-        </span>
-        <span class="arc-date">06 Mar 2026</span>
-      </a>
+      <div class="arc-row">
+        <a class="arc-link" href="issue7.html">
+          <span class="arc-num">Issue 7</span>
+          <span class="arc-body">
+            <span class="arc-title">The Invisible Port</span>
+            <span class="arc-subtitle">Airport Economy — how OR Tambo reorganised the economic geography of the East Rand</span>
+          </span>
+        </a>
+        <div class="arc-meta">
+          <span class="arc-date">06 Mar 2026</span>
+          <a class="arc-pdf" href="ekurhuleni-underground-issue7.pdf" download>PDF</a>
+        </div>
+      </div>
     </li>
 
   </ul>
