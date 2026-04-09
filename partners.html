@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner With Us — Ekurhuleni Underground</title>
+<meta name="description" content="Partner with Ekurhuleni Underground — reach an audience of decision-makers, planners, and economic actors who take the East Rand seriously.">
+<style>
+  :root {
+    --gold: #B8963E;
+    --dark: #1A1A1A;
+    --mid: #555555;
+    --light: #888888;
+    --bg: #FAFAF7;
+    --rule: #DDDDDD;
+    --tint: #F5F0E8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--dark);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  .page-wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* TOP NAV */
+  .top-nav {
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-nav .nav-brand {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    color: var(--gold);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .top-nav .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  .top-nav .nav-links a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--mid);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .top-nav .nav-links a:hover,
+  .top-nav .nav-links a.active { color: var(--gold); }
+
+  /* PAGE HEADER */
+  .page-header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .page-header .eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .page-header h1 {
+    font-family: Arial, sans-serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 900;
+    color: var(--dark);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .page-header .deck {
+    font-style: italic;
+    font-size: 19px;
+    color: var(--mid);
+    line-height: 1.55;
+  }
+
+  /* SECTION SCAFFOLDING */
+  .section-label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 52px;
+    margin-bottom: 10px;
+  }
+  .section-rule {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+  }
+  p.body { margin-bottom: 20px; text-align: justify; }
+
+  /* PULL QUOTE */
+  blockquote.pull {
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+    padding: 22px 32px;
+    margin: 36px 0;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* AUDIENCE STATS STRIP */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 32px 0;
+  }
+  .stat-cell {
+    background: var(--bg);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .stat-cell .stat-num {
+    font-family: Arial, sans-serif;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .stat-cell .stat-desc {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--mid);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    line-height: 1.4;
+  }
+
+  /* PARTNERSHIP TIERS */
+  .tier-list {
+    list-style: none;
+    margin: 0;
+  }
+  .tier-item {
+    border-top: 1px solid var(--rule);
+    padding: 28px 0;
+  }
+  .tier-item:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+  .tier-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .tier-name {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  .tier-price {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .tier-desc {
+    color: var(--mid);
+    font-size: 16px;
+    margin-bottom: 14px;
+    line-height: 1.65;
+  }
+  .tier-includes {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .tier-includes li {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--mid);
+    padding-left: 18px;
+    position: relative;
+  }
+  .tier-includes li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  /* FEATURED TIER (PRESENTING PARTNER) */
+  .tier-item.featured {
+    background: var(--tint);
+    border-left: 4px solid var(--gold);
+    padding: 28px 24px;
+    margin: 0 -24px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .tier-item.featured + .tier-item {
+    border-top: 1px solid var(--rule);
+  }
+  .tier-featured-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  /* PRINCIPLES / WHAT WE WON'T DO */
+  .principles {
+    list-style: none;
+    margin: 0;
+  }
+  .principles li {
+    border-top: 1px solid var(--rule);
+    padding: 18px 0;
+  }
+  .principles li:last-child { border-bottom: 1px solid var(--rule); }
+  .principles .p-label {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .principles p { color: var(--mid); font-size: 16px; }
+
+  /* WHO READS THIS */
+  .reader-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 28px 0;
+  }
+  .reader-cell {
+    background: var(--bg);
+    padding: 20px;
+  }
+  .reader-cell .r-label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .reader-cell p {
+    font-size: 15px;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  /* INFO BLOCK */
+  .info-block {
+    background: var(--tint);
+    border-left: 4px solid var(--gold);
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-size: 16px;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+  .info-block strong { color: var(--dark); }
+  .info-block a { color: var(--gold); text-decoration: none; }
+  .info-block a:hover { text-decoration: underline; }
+
+  /* CTA BUTTON */
+  .cta-block {
+    text-align: center;
+    padding: 36px 0 8px;
+  }
+  .cta-block a.cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 32px;
+    transition: background 0.15s;
+  }
+  .cta-block a.cta-btn:hover { background: #9a7c30; }
+  .cta-block .cta-note {
+    margin-top: 14px;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--light);
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 48px 0;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    border-top: 1px solid var(--rule);
+    padding: 24px 0 0;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: var(--light);
+    text-align: center;
+  }
+  .site-footer a { color: var(--gold); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .footer-copy { margin-top: 10px; font-size: 11px; }
+
+  @media (max-width: 540px) {
+    body { font-size: 16px; }
+    .page-wrap { padding: 0 16px 60px; }
+    blockquote.pull { padding: 16px 18px; font-size: 18px; }
+    .stats-strip { grid-template-columns: 1fr; }
+    .reader-grid { grid-template-columns: 1fr; }
+    .top-nav .nav-links { gap: 14px; }
+    .tier-item.featured { margin: 0 -16px; }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <nav class="top-nav">
+    <a href="index.html" class="nav-brand">Ekurhuleni Underground</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#archive">Archive</a></li>
+      <li><a href="partners.html" class="active">Partners</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="eyebrow">Commercial Partnerships</div>
+    <h1>Reach the Audience That Takes Ekurhuleni Seriously</h1>
+    <p class="deck">Ekurhuleni Underground is read by the people who build, plan, finance, and operate the East Rand's economy. If your organisation belongs in that conversation, this is where to join it.</p>
+  </div>
+
+  <!-- WHY PARTNER -->
+  <div class="section-label">Why Partner</div>
+  <div class="section-rule">A Different Kind of Readership</div>
+
+  <p class="body">Most publications that cover the East Rand reach a general audience. Ekurhuleni Underground does not. Our readers sought us out because they are professionally or intellectually invested in understanding how this region actually works — its supply chains, its informal economies, its infrastructure dependencies, its transition from a manufacturing past toward whatever comes next. That specificity of interest creates a readership that is, by definition, pre-qualified: you do not read a deep analysis of the Boksburg water network for casual entertainment.</p>
+
+  <p class="body">Our audience includes municipal planners, property developers, logistics and supply chain professionals, economists and researchers, investment analysts with interests in the Gauteng industrial belt, and the business owners and operators who run the visible and invisible economies this publication covers. They are not passive consumers. They are decision-makers who return to Ekurhuleni Underground precisely because it tells them things that no other publication does.</p>
+
+  <blockquote class="pull">We do not sell eyeballs. We offer access to attention that is already directed at the economy you operate in.</blockquote>
+
+  <p class="body">Partnering with Ekurhuleni Underground is not an advertising transaction. It is an alignment — a signal to a specific professional community that your organisation understands the region deeply enough to want to be associated with serious analysis of it. That signal travels further than a banner impression, and it lasts considerably longer.</p>
+
+  <!-- AUDIENCE NUMBERS -->
+  <div class="section-label">The Audience</div>
+  <div class="section-rule">Who Reads This Publication</div>
+
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <span class="stat-num">~20 min</span>
+      <span class="stat-desc">Average reading time per issue</span>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-num">Weekly</span>
+      <span class="stat-desc">Publication cadence, every Thursday</span>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-num">12+</span>
+      <span class="stat-desc">Issues published since March 2026</span>
+    </div>
+  </div>
+
+  <div class="reader-grid">
+    <div class="reader-cell">
+      <div class="r-label">Urban & Regional Planning</div>
+      <p>Planners, policy researchers, and municipal officials who need grounded economic intelligence about Ekurhuleni's informal and formal systems.</p>
+    </div>
+    <div class="reader-cell">
+      <div class="r-label">Property & Infrastructure</div>
+      <p>Developers, fund managers, and infrastructure investors tracking the long-term economic geography of the East Rand and its corridors.</p>
+    </div>
+    <div class="reader-cell">
+      <div class="r-label">Logistics & Supply Chain</div>
+      <p>Operators, freight professionals, and supply chain analysts for whom OR Tambo and the East Rand's industrial belt are a working environment.</p>
+    </div>
+    <div class="reader-cell">
+      <div class="r-label">Research & Academia</div>
+      <p>Urban economists, geographers, and social scientists studying informal economies, post-extractive transitions, and township commercial development.</p>
+    </div>
+    <div class="reader-cell">
+      <div class="r-label">Business & Entrepreneurship</div>
+      <p>Business owners, founders, and investors who operate in or adjacent to the industries and corridors this publication covers each week.</p>
+    </div>
+    <div class="reader-cell">
+      <div class="r-label">Civic & NGO Sector</div>
+      <p>Practitioners in community economic development, informal sector support, and urban resilience who read Ekurhuleni Underground as field intelligence.</p>
+    </div>
+  </div>
+
+  <!-- EDITORIAL INDEPENDENCE NOTE -->
+  <div class="info-block">
+    <strong>Our editorial independence is non-negotiable.</strong> No partner relationship influences what we write, which topics we cover, or how we frame our analysis. We do not produce sponsored editorial content, paid placement articles, or branded stories. What we offer is association — not influence. If you are looking to shape what Ekurhuleni Underground says, we are not the right partner. If you are looking to be seen alongside what Ekurhuleni Underground says, read on.
+  </div>
+
+  <!-- PARTNERSHIP TIERS -->
+  <div class="section-label">Partnership Options</div>
+  <div class="section-rule">How to Partner</div>
+
+  <ul class="tier-list">
+
+    <!-- PRESENTING PARTNER — FEATURED -->
+    <li class="tier-item featured">
+      <div class="tier-featured-label">Most Prominent</div>
+      <div class="tier-header">
+        <span class="tier-name">Presenting Partner</span>
+        <span class="tier-price">Annual — Exclusive</span>
+      </div>
+      <p class="tier-desc">A single organisation holds the Presenting Partner position for the full publication year. Your name appears in the masthead of every issue alongside the Ekurhuleni Underground brand — a persistent, uncluttered association with the publication's full body of work. There is one Presenting Partner at any time. No other partner appears at this level.</p>
+      <ul class="tier-includes">
+        <li>Named credit in every issue masthead: "Published in partnership with [Organisation]"</li>
+        <li>Logo and one-line description on the Partners page of the publication website</li>
+        <li>One dedicated annual feature — a 300-word editorial note, written by the Ekurhuleni Underground team, introducing your organisation's work in the context of the East Rand economy (factual, not promotional)</li>
+        <li>Early access to each issue before publication</li>
+        <li>Annual briefing: a 60-minute conversation with the editorial team on the themes and directions the publication is developing for the coming year</li>
+      </ul>
+    </li>
+
+    <!-- ISSUE PARTNER -->
+    <li class="tier-item">
+      <div class="tier-header">
+        <span class="tier-name">Issue Partner</span>
+        <span class="tier-price">Per Issue — Limited to One</span>
+      </div>
+      <p class="tier-desc">One organisation partners with a single issue of Ekurhuleni Underground. Your name appears on the issue's header and footer as the issue partner — a clean, visible association with a specific piece of analysis that is relevant to your sector or geography. No more than one Issue Partner per issue. No Issue Partnership will be sold for an issue whose editorial content directly concerns the partner's own operations or industry.</p>
+      <ul class="tier-includes">
+        <li>Named credit in the issue header and footer: "This issue supported by [Organisation]"</li>
+        <li>Logo and link on the publication website's issue archive listing for that issue (permanent)</li>
+        <li>One social media acknowledgement at publication</li>
+      </ul>
+    </li>
+
+    <!-- RESEARCH PARTNERSHIP -->
+    <li class="tier-item">
+      <div class="tier-header">
+        <span class="tier-name">Research Partnership</span>
+        <span class="tier-price">Project-Based — By Arrangement</span>
+      </div>
+      <p class="tier-desc">For organisations with a substantive interest in the economic geography of Ekurhuleni — municipalities, universities, development finance institutions, foundations — we offer a structured research partnership. This is not an advertising arrangement. It is a commission: you fund an extended piece of analysis on a theme of mutual interest, which Ekurhuleni Underground researches and publishes independently. The editorial process and framing remain entirely under our control. The resulting publication is attributed as an Ekurhuleni Underground research edition, supported by your organisation.</p>
+      <ul class="tier-includes">
+        <li>Extended research edition (2,500–4,000 words) on an agreed theme</li>
+        <li>Full editorial independence — the final framing and conclusions are ours</li>
+        <li>Named support credit across the edition and its web presence</li>
+        <li>PDF version formatted for distribution and presentation use</li>
+        <li>Briefing session with your team on findings before publication</li>
+      </ul>
+    </li>
+
+    <!-- COMMUNITY PARTNER -->
+    <li class="tier-item">
+      <div class="tier-header">
+        <span class="tier-name">Community Partner</span>
+        <span class="tier-price">Annual — Multiple Available</span>
+      </div>
+      <p class="tier-desc">Designed for smaller organisations, civic bodies, and local businesses that want to be associated with the publication's work without the scale of a Presenting Partnership. Community Partners are acknowledged on the publication's Partners page with a brief description of their work. This tier is intended for organisations that are genuinely part of the Ekurhuleni economic ecosystem — businesses operating in the region, local professional associations, research organisations focused on the East Rand.</p>
+      <ul class="tier-includes">
+        <li>Named listing on the Partners page with one-paragraph description and website link</li>
+        <li>Annual acknowledgement in one issue's editorial notes</li>
+        <li>Subscription to the editorial team's quarterly theme planning summary</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <!-- WHAT WE WON'T DO -->
+  <div class="section-label">Editorial Boundaries</div>
+  <div class="section-rule">What Partnership Does Not Buy</div>
+
+  <ul class="principles">
+    <li>
+      <div class="p-label">No editorial influence</div>
+      <p>Partners have no input into what topics we cover, how we frame our analysis, or what conclusions we reach. This is unconditional.</p>
+    </li>
+    <li>
+      <div class="p-label">No sponsored content</div>
+      <p>We do not produce articles, editorials, or analysis that are written to serve a partner's commercial or reputational interests. Every word in every issue reflects the editorial team's independent judgment.</p>
+    </li>
+    <li>
+      <div class="p-label">No conflict of interest</div>
+      <p>We will not enter a partnership arrangement with an organisation whose interests would create a conflict with our ability to cover a topic freely. If we are covering your industry or your operations in an issue, we will not sell that issue's partnership to you.</p>
+    </li>
+    <li>
+      <div class="p-label">No volume discounts for prominence</div>
+      <p>Partnership tiers are defined by their function, not by how much an organisation pays. The Presenting Partnership is a single, exclusive position. We will not create additional tiers or modify the editorial acknowledgement structure to accommodate larger financial commitments.</p>
+    </li>
+  </ul>
+
+  <!-- HOW TO APPLY -->
+  <div class="section-label">Get in Touch</div>
+  <div class="section-rule">Starting a Conversation</div>
+
+  <p class="body">We review partnership enquiries on a rolling basis. We are selective about who we partner with — not because we are difficult, but because the value of the association depends on it being genuine. We are most interested in organisations that are substantively engaged with the economic geography of Ekurhuleni: as operators, investors, researchers, planners, or practitioners.</p>
+
+  <p class="body">If you are unsure whether a partnership makes sense for your organisation, the easiest thing is to start a conversation. Tell us who you are, what you do, and why you think Ekurhuleni Underground's readership is the right audience for your work. We will respond honestly about whether we think there is a fit.</p>
+
+  <div class="cta-block">
+    <a href="mailto:partnerships@ekurhuleniunderground.co.za" class="cta-btn">Enquire About Partnership</a>
+    <p class="cta-note">We aim to respond to all partnership enquiries within five business days.</p>
+  </div>
+
+  <hr class="rule">
+
+  <div class="info-block">
+    <strong>Publication:</strong> Ekurhuleni Underground<br>
+    <strong>Publisher:</strong> 1906 Reblabs<br>
+    <strong>Jurisdiction:</strong> Republic of South Africa<br>
+    <strong>Partnership enquiries:</strong> <a href="mailto:partnerships@ekurhuleniunderground.co.za">partnerships@ekurhuleniunderground.co.za</a><br>
+    <strong>Website:</strong> <a href="https://1906reblabs.github.io/ekurhuleni-underground/">1906reblabs.github.io/ekurhuleni-underground</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>The hidden systems of the East Rand</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="index.html#archive">Archive</a>
+      <a href="partners.html">Partners</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+    <p class="footer-copy">© 2026 1906 Reblabs. Published weekly from Ekurhuleni, South Africa.</p>
+  </footer>
+
+</div>
+</body>
+</html>
