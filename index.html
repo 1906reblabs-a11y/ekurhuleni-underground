@@ -11,16 +11,19 @@
      GOOGLE SEARCH CONSOLE VERIFICATION
      Equivalent to the standalone googledd09d3fdf11fc4c8.html file.
      Google accepts either method; the meta tag is preferred as it
-     verifies all pages served from this domain without a repo file.
+     verifies all pages served from this domain without a separate
+     repo file. Once this index.html is pushed, ownership can be
+     confirmed immediately in Google Search Console.
      ============================================================ -->
 <meta name="google-site-verification" content="dd09d3fdf11fc4c8">
 
 <!-- ============================================================
-     SEO — INDEXING & CANONICAL
+     SEO — CRAWLING, INDEXING & CANONICAL
      ============================================================ -->
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://1906reblabs.github.io/ekurhuleni-underground/">
-<link rel="sitemap" type="application/xml" title="Sitemap" href="https://1906reblabs.github.io/ekurhuleni-underground/sitemap.xml">
+<link rel="sitemap" type="application/xml" title="Sitemap"
+      href="https://1906reblabs.github.io/ekurhuleni-underground/sitemap.xml">
 
 <!-- ============================================================
      PWA / MOBILE
@@ -31,7 +34,7 @@
 <meta name="apple-mobile-web-app-title" content="Ekurhuleni Underground">
 
 <!-- ============================================================
-     OPEN GRAPH
+     OPEN GRAPH — controls appearance when shared on social media
      ============================================================ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ekurhuleni Underground">
@@ -49,8 +52,9 @@
 
 <!-- ============================================================
      JSON-LD STRUCTURED DATA
-     Tells Google exactly what this site is, who publishes it,
-     and surfaces the full issue list for rich search results.
+     Declares the site as a WebSite + Organization + Blog with all
+     13 BlogPosting entries. Enables Google rich results, knowledge
+     panel recognition, and accurate indexing of every issue.
      ============================================================ -->
 <script type="application/ld+json">
 {
@@ -240,7 +244,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ============================================================
-   TOP NAV
+   TOP NAV  — hamburger on mobile, inline on ≥640px
    ============================================================ */
 .top-nav {
   border-bottom: 1px solid var(--rule);
@@ -264,7 +268,6 @@ img { max-width: 100%; height: auto; display: block; }
   align-items: center;
   padding: 10px 0;
 }
-.nav-brand:hover { color: var(--gold); }
 
 .nav-toggle {
   display: flex;
@@ -309,10 +312,8 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: 0 6px 20px rgba(0,0,0,.10);
 }
 .nav-links.is-open { display: flex; }
-
 .nav-links li { border-bottom: 1px solid var(--rule); }
 .nav-links li:last-child { border-bottom: none; }
-
 .nav-links li a {
   font-family: Arial, sans-serif;
   font-size: 13px;
