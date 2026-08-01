@@ -8,13 +8,13 @@
        EKURHULENI UNDERGROUND — SITEMAP
        Publication: 1906 Reblabs
        Site: https://1906reblabs.github.io/ekurhuleni-underground/
-       Last updated: 2026-07-24
+       Last updated: 2026-07-31
        ============================================================ -->
 
   <!-- HOME — highest priority, updated with every new issue -->
   <url>
     <loc>https://1906reblabs.github.io/ekurhuleni-underground/</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,9 +48,10 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- ISSUES — newest first, all high priority as evergreen content -->
   <url>
-    <loc>https://1906reblabs.github.io/ekurhuleni-underground/issue27.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <loc>https://1906reblabs.github.io/ekurhuleni-underground/issue28.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>never</changefreq>
     <priority>0.9</priority>
   </url>
@@ -76,7 +77,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- ISSUES — newest first, all high priority as evergreen content -->
   <url>
     <loc>https://1906reblabs.github.io/ekurhuleni-underground/issue23.html</loc>
     <lastmod>2026-06-26</lastmod>
